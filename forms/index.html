@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="/submit" method="post">
+       <fieldset class="Info"> 
+        
+        <legend> <strong>Personal Information</strong> </legend>
+
+        <p>
+            <strong><label for="fname">Full Name:</label></strong>
+            <input type="text" name="fname" id="fname" required> <br><br>
+
+            <strong><label for="email">Email Address:</label></strong>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <strong><label for="phone">Phone Number:</label></strong>
+            <input type="tel" id="phone" name="phone" required> <br><br>
+
+            <strong><label for="age">Age:</label></strong>
+            <input type="number" id="age" name="age" min="0" max="120" required> <br>
+        </p>
+
+       </fieldset> 
+
+       <fieldset class="Preferences">
+        <legend> <strong>Preferences</strong> </legend>
+
+        <p>
+            <strong>Gender:</strong>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+            </p>
+
+        <p>
+            <strong>Current Status:</strong>
+            <input type="radio" name="status" id="Student" value="student" required>
+            <label for="Student">Student</label>
+            <input type="radio" name="status" id="Employed" value="employed" required>
+            <label for="Employed">Employed</label>
+            <input type="radio" name="status" id="Unemployed" value="unemployed" required>
+            <label for="Unemployed">Unemployed</label>
+        </p>
+
+        <p>     
+            <strong>Daily Internet Usage:</strong>
+            <input type="radio" name="internet_usage" id="Intrernet_usage_1" value="0-8 hours" required>
+            <label for="Intrernet_usage_1">0-8 hours</label>
+            <input type="radio" name="internet_usage" id="Internet_usage_2" value="8-16 hours" required>
+            <label for="Internet_usage_2">8-16 hours</label>
+            <input type="radio" name="internet_usage" id="Internet_usage_3" value="16-24 hours" required>
+            <label for="Internet_usage_3">16-24 hours</label>
+        </p>
+
+       </fieldset>
+
+       <fieldset  class="Interests">
+        <legend><strong>Interests & Skills</strong></legend>
+        <p>
+            <strong>Which of these do you enjoy?</strong>
+            <input type="checkbox" name="interests" id="interest1" value="Reading">
+            <label for="interest1">Reading</label>
+            <input type="checkbox" name="interests" id="interest2" value="Gaming">
+            <label for="interest2">Gaming</label>
+            <input type="checkbox" name="interests" id="interest3" value="Sports">
+            <label for="interest3">Sports</label>
+            <input type="checkbox" name="interests" id="interest4" value="Music">
+            <label for="interest4">Music</label>
+        </p>
+        
+        <p>
+            <strong>Programming Languages Known:</strong>
+            <input type="checkbox" name="languages" id="language1" value="HTML">
+            <label for="language1">HTML</label>
+            <input type="checkbox" name="languages" id="language2" value="CSS">
+            <label for="language2">CSS</label>
+            <input type="checkbox" name="languages" id="language3" value="JavaScript">
+            <label for="language3">JavaScript</label>
+            <input type="checkbox" name="languages" id="language4" value="Python">
+            <label for="language4">Python</label>
+        </p>
+
+        <p>
+            <strong>Devices You Own:</strong>
+            <input type="checkbox" name="devices" id="device1" value="Laptop">
+            <label for="device1">Laptop</label>
+            <input type="checkbox" name="devices" id="device2" value="Smartphone">
+            <label for="device2">Smartphone</label>
+            <input type="checkbox" name="devices" id="device3" value="Tablet">
+            <label for="device3">Tablet</label>
+            <input type="checkbox" name="devices" id="device4" value="Desktop">
+            <label for="device4">Desktop</label>
+        </p>
+       </fieldset>
+
+       <fieldset  class="Technology">
+        <legend><strong>Technology & Availability</strong></legend>
+        <p>
+            <strong>Rate your computer skills:</strong>
+            <input type="radio" name="skills" id="skills1" value="Beginner" required>
+            <label for="skills1">Beginner</label>
+            <input type="radio" name="skills" id="skills2" value="Intermediate" required>
+            <label for="skills2">Intermediate</label>
+            <input type="radio" name="skills" id="skills3" value="Advanced" required>
+            <label for="skills3">Advanced</label>
+        </p>
+
+        <p>
+            <label for="fav_app"><strong>My favorite app is:</strong></label>
+            <input type="text" name="fav_app" id="fav_app" required>
+        </p>
+
+        <p>
+            <label for="training_time"><strong>Preferred Time for Training:</strong></label>
+            <select name="training_time" id="training-time" required>
+                <option value="" disabled selected>Available Times</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+        </p>
+ 
+        <p>                        
+            <label for="start_date"><strong>Start Date:</strong></label>
+            <input type="date" name="start_date" id="start_date">
+        </p> 
+       </fieldset>
+
+       <fieldset class="additional_info">
+        <legend><strong>Additional Information</strong></legend>
+        <p>
+            <label for="interests_info"><strong>Why are you interested in this course?</strong></label> <br>
+            <textarea name="interests_info" id="interests_info" rows="5" required cols="33"></textarea>           
+        </p>
+
+        <p>
+            <label for="challenges"><strong>What Challenges do you expect to face when learning tech?</strong></label> <br>
+            <textarea name="challenges" id="challenges" rows="5" required cols="33"></textarea>
+        </p>
+       </fieldset>
+
+
+<fieldset>
+    <legend><strong>Final Questions</strong></legend>
+    <p>
+        <strong>Would you recommend this course to others?</strong>
+        <input type="radio" name="recommend" id="yes" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" name="recommend" id="no" value="no">
+        <label for="no">No</label>
+    </p>
+
+    <strong>Do you agree to the terms and conditions?</strong>
+    <input type="checkbox" name="terms" id="terms" value="agree" required>
+    <label for="terms">I agree.</label> <br><br>
+
+</fieldset>
+
+    </form>
+</body>
+</html>
