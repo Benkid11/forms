@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <h1>Forms</h1>
@@ -148,22 +148,56 @@
         </p>
        </fieldset>
 
+        <fieldset>
+            <legend><strong>Additional Information</strong></legend>
+            <p>
+                <label for="date_of_birth"><strong>Date of Birth:</strong></label>
+                <input type="date" name="date_of_birth" id="date_of_birth" required> 
+            </p>
 
-<fieldset>
-    <legend><strong>Final Questions</strong></legend>
-    <p>
-        <strong>Would you recommend this course to others?</strong>
-        <input type="radio" name="recommend" id="yes" value="yes" required>
-        <label for="yes">Yes</label>
-        <input type="radio" name="recommend" id="no" value="no">
-        <label for="no">No</label>
-    </p>
+            <p>
+                <label for="fav_color"><strong>Favorite Color:</strong></label>
+                <input type="color" name="fav_color" id="fav_color" required>
+            </p>
 
-    <strong>Do you agree to the terms and conditions?</strong>
-    <input type="checkbox" name="terms" id="terms" value="agree" required>
-    <label for="terms">I agree.</label> <br><br>
+            <p>
+                <label for="start_training"><strong>Select Date and Time To Start Training:</strong></label>
+                <input type="datetime-local" name="start_training" id="start_training" required>
+            </p>
 
-</fieldset>
+            <p>
+                <label for="CV"><strong>Upload Your CV:</strong></label>
+                <input type="file" name="CV" id="CV" required>
+            </p>
+
+            <p>
+                <label for="skill_level"><strong>Adjust Skill Level:</strong></label>
+                <input type="range" name="skill_level" id="skill_level" min="1" max="10" required>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend><strong>Final Questions</strong></legend>
+            <p>
+                <strong>Would you recommend this course to others?</strong>
+                <input type="radio" name="recommend" id="yes" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" name="recommend" id="no" value="no">
+                <label for="no">No</label>
+            </p>
+
+            <strong>Do you agree to the terms and conditions?</strong>
+            <input type="checkbox" name="terms" id="terms" value="agree" required>
+            <label for="terms">I agree.</label> <br><br>
+        </fieldset>        
+
+        <div class="btn-group">
+            <input class="submit" type="submit" value="Submit">
+            <input class="reset" type="reset" value="Reset Form">
+        </div>
+        
 
     </form>
 </body>
