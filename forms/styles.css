@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+fieldset{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.submit{
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    width: 25%;
+}
+
+.reset{
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    width: 25%;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.submit, .reset {
+  padding: 10px;
+  width: 25%;
+}
