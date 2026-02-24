@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Forms</h1>
-    <form action="/submit" method="post">
-       <fieldset class="Info"> 
+    <form action="/submit" method="post" autocomplete="on">
+       <fieldset class="info"> 
         
         <legend> <strong>Personal Information</strong> </legend>
 
@@ -135,8 +135,8 @@
         </p> 
        </fieldset>
 
-       <fieldset class="additional_info">
-        <legend><strong>Additional Information</strong></legend>
+       <fieldset class="course_info">
+        <legend><strong>Course Information</strong></legend>
         <p>
             <label for="interests_info"><strong>Why are you interested in this course?</strong></label> <br>
             <textarea name="interests_info" id="interests_info" rows="5" required cols="33"></textarea>           
@@ -148,7 +148,7 @@
         </p>
        </fieldset>
 
-        <fieldset>
+        <fieldset class="additional_information">
             <legend><strong>Additional Information</strong></legend>
             <p>
                 <label for="date_of_birth"><strong>Date of Birth:</strong></label>
@@ -163,6 +163,11 @@
             <p>
                 <label for="start_training"><strong>Select Date and Time To Start Training:</strong></label>
                 <input type="datetime-local" name="start_training" id="start_training" required>
+            </p>
+            
+            <p>
+                <label for="training_week"><strong>Select Week for Training:</strong></label>
+                <input type="week" name="training_week" id="training_week">
             </p>
 
             <p>
@@ -188,14 +193,19 @@
                 <label for="no">No</label>
             </p>
 
+             <p>
+                 <label for="feedback"><strong>Any additional feedback or comments?</strong></label> <br>
+                 <textarea name="feedback" id="feedback" rows="5" cols="33"></textarea>
+             </p>
+
             <strong>Do you agree to the terms and conditions?</strong>
             <input type="checkbox" name="terms" id="terms" value="agree" required>
             <label for="terms">I agree.</label> <br><br>
         </fieldset>        
 
         <div class="btn-group">
-            <input class="submit" type="submit" value="Submit">
             <input class="reset" type="reset" value="Reset Form">
+            <input class="submit" type="submit" value="Submit">
         </div>
         
 
