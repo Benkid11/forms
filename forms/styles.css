@@ -3,6 +3,13 @@ h1{
     font-family: "Georgia", serif;
 }
 
+.form-info{
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+    color: rgb(120, 120, 120);
+}
+
 p{
     font-size: 20px;
     text-align: justify;
@@ -45,6 +52,11 @@ fieldset{
   width: 25%;
 }
 
-
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 
