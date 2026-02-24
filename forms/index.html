@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+
     <h1>Forms</h1>
+    <p class="form-info">This is a sample form for collecting user information.</p>
+
     <form action="/submit" method="post" autocomplete="on">
        <fieldset class="info"> 
         
@@ -213,7 +216,11 @@
             <input class="reset" type="reset" value="Reset Form">
             <input class="submit" type="submit" value="Submit">
         </div>
-        
+
+        <div class="remember">
+        <label for="remember">Remember</label>
+        <input type="checkbox" id="remember" name="remember"> <br><br>
+        </div>
 
     </form>
 </body>
